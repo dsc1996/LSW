@@ -528,6 +528,7 @@ body,
 .header .header-inner .dropdown > .nav-icon{
 	height: 8rem;
 	line-height: 8rem;
+	vertical-align: center;
 }
 
 /* Compacted Height */
@@ -553,15 +554,19 @@ body,
 .header-transparent .header-inner{
 	background-color: transparent;
 	border-bottom: 1px solid transparent;
+	vertical-align: center;
 }
 .header-transparent .header-inner > .nav-bar{
 	border-bottom: 1px solid rgba(255,255,255, 0.2);
+	vertical-align: center;
 }
 
 /* Background Header - On Scroll! */
 .header-background .header-inner{
-	background-color: #fff;
-	border-color: #eee;
+	background-image: url('../RainWaterIrrigation.jpg');
+	border-color: #232323;
+	color: white;
+	vertical-align: middle;
 }
 .header-background .header-inner > .nav-bar{
 	border-bottom: none;
@@ -606,6 +611,7 @@ body,
 /* Initial Logo Width */
 .header .logo{
 	width: 12.5rem;
+	height: 12.5rem;
 }
 
 /* Compacted Header Logo Width */
@@ -617,7 +623,7 @@ body,
 .header .logo a{
 	display: block !important;
 	position: absolute;
-	top: 0;
+	top: 10px;
 }
 .header-in .logo a,
 .header-out .logo a{
@@ -715,61 +721,97 @@ body,
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 0;
+	vertical-align: middle;
 }
 
 /* Header Initial & Active Nav Colors */
 .header .navigation > ul > li > a{
-	color: #999;
+	color: white;
 	opacity: 1;
 }
 .header .navigation > ul > li.current > a,
 .header .navigation > ul > li > a:hover{
-	color: #000;
+	color: white;
 	opacity: 1;
 }
 .header .navigation > ul > li.current > a:hover{
-	color: #000;
+	color: white;
 }
 
 /* Transparent Header Initial, Hover & Current Nav Colors */
 .header-transparent .navigation > ul > li > a{
-	color: #fff;
+	color: white;
 	opacity: 0.6;
 }
 .header-transparent .navigation > ul > li > a:hover{
-	color: #fff;
-	opacity: 1;
+	color: white;
+	opacity: 1;        
+	text-shadow: 0px 0px 10px #7CFC00,
+								0px 0px 20px #7CFC00,
+								0px 0px 30px #7CFC00,
+								0px 0px 40px #7CFC00,
+								0px 0px 50px #7CFC00,
+								0px 0px 60px #7CFC00,
+								0px 0px 70px #7CFC00;
 }
 .header-transparent .navigation > ul > li.current > a,
 .header-transparent .navigation > ul > li.current > a:hover{
 	color: #fff;
 	opacity: 1;
+	text-shadow: 0px 0px 10px #4666FF,
+								0px 0px 20px #4666FF,
+								0px 0px 30px #4666FF,
+								0px 0px 40px #4666FF,
+								0px 0px 50px #4666FF,
+								0px 0px 60px #4666FF,
+								0px 0px 70px #4666FF;
+}
+
+#contactButton:hover {
+	box-shadow: 0px 0px 10px #4666FF,
+	0px 0px 20px #4666FF,
+	0px 0px 30px #4666FF,
+	0px 0px 40px #4666FF;
+}
+
+#titleText {
+	text-shadow: 0px 0px 10px #4666FF,
+	0px 0px 20px #4666FF,
+	0px 0px 30px #4666FF,
+	0px 0px 40px #4666FF;
+}
+
+#contactUpperButton:hover {
+	box-shadow: 0px 0px 10px #4666FF,
+	0px 0px 20px #4666FF,
+	0px 0px 30px #4666FF,
+	0px 0px 40px #4666FF;
 }
 
 /* Nav Dark Initial, Hover & Current Colors */
 .header-transparent.nav-dark .navigation > ul > li > a{
-	color: #000;
+	color: white;
 	opacity: 0.5;
 }
 .nav-dark .navigation > ul > li.current > a,
 .nav-dark .navigation > ul > li.current > a:hover{
-	color: #000;
+	color: white;
 	opacity: 1;
 }
 
 /* Header Background Initial, Hover & Current Nav Colors - On Scroll! */
 .header-background .navigation > ul > li > a{
-	color: #999;
+	color: white;
 }
 .header-background .navigation > ul > li.current > a{
-	color: #000;
+	color: white;
 	border-bottom: none;
 }
 .header-background .navigation > ul > li.current > a:hover{
-	color: #000;
+	color: white;
 }
 .header-background .navigation > ul > li > a:hover{
-	color: #000;
+	color: white;
 	opacity: 1;
 }
 
@@ -1671,12 +1713,15 @@ body,
 .tml-promotion-modal .modal-dialog > div{
 	padding-left: 0;
 	padding-right: 0;
+	color: white;
 }
 .tml-contact-modal .contact-form-container,
 .tml-search-modal .search-form-container,
 .tml-newsletter-modal .signup-form-container {
 	padding-left: 3rem;
 	padding-right: 3rem;
+	color: white;
+
 }
 
 /* greyscale upon modal opening */
@@ -1834,6 +1879,7 @@ body,
 }
 .overlay-fade-img-scale-in .project-title{
 	margin-bottom: 0;
+	color: white;
 }
 .caption-below{
 	padding-right: 0;
@@ -2019,12 +2065,14 @@ body,
 .masonry-stamp .caption-over-outer{
 	background-color: rgba(255,255,255,.6);
 }
-h4.project-title{
+h3.project-title{
 	font-size: 1.4rem;
+	color: white;
 }
 .project-title .label{
 	font-size: 1rem;
 	text-transform: uppercase;
+	color: white;
 }
 .project-description{
 	font-size: 1.2rem;
@@ -2439,7 +2487,7 @@ select{
 	text-transform: none;
 	font-weight: 300;
 	letter-spacing: 0.1rem;
-	color: #666;
+	color: white;
 }
 .form-element:focus, 
 textarea:focus{
@@ -2449,40 +2497,40 @@ textarea:focus{
 	border-top: none;
 	box-shadow: none;
 	border-bottom-color: #232323;
-	color: #000;
+	color: white;
 }
 .form-element.required-field:focus, 
 textarea.required-field:focus{
 	background: none;
 	border-color: #232323;
 	box-shadow: none;
-	color: #000;
+	color: white;
 }
 .form-element.required-field,
 textarea.required-field{
 	background: none;
 	box-shadow: none;
-	color: #000;
+	color: white;
 	border-bottom-color: #232323;
 	position: relative;
 }
 .form-element::-webkit-input-placeholder{
-	color: #666;
+	color: white;
 }
 .form-element:focus::-webkit-input-placeholder{
-	color: #000;
+	color: white;
 }
 .form-element::-moz-placeholder{
-	color: #666;
+	color: white;
 }
 .form-element:focus::-moz-placeholder{
-	color: #000;
+	color: white;
 }
 .form-element:-ms-input-placeholder{
-	color: #666;
+	color: white;
 }
 .form-element:focus:-ms-input-placeholder{
-	color: #000;
+	color: white;
 }
 
 /* Checkbox and Radio */
@@ -2518,22 +2566,22 @@ textarea.required-field{
 
 /* Contact Specific */
 .contact-form-container ::-webkit-input-placeholder{
-	color: #666;
+	color: white;
 }
 .contact-form-container :focus::-webkit-input-placeholder{
-	color: #000;
+	color: white;
 }
 .contact-form-container ::-moz-placeholder{
-	color: #666;
+	color: white;
 }
 .contact-form-container :focus::-moz-placeholder{
-	color: #000;
+	color: white;
 }
 .contact-form-container :-ms-input-placeholder{
-	color: #666;
+	color: white;
 }
 .contact-form-container :focus:-ms-input-placeholder{
-	color: #000;
+	color: white;
 }
 .contact-form-container .form-response{
 	bottom: -3rem;
@@ -2541,25 +2589,25 @@ textarea.required-field{
 
 /* Overlay Search Form Elements */
 .search-form-container .form-element:focus{
-	color: #666;
+	color: white;
 }
 .search-form-container ::-webkit-input-placeholder{
-	color: #666;
+	color: white;
 }
 .search-form-container :focus::-webkit-input-placeholder{
-	color: #000;
+	color: white;
 }
 .search-form-container ::-moz-placeholder{
-	color: #666;
+	color: white;
 }
 .search-form-container :focus::-moz-placeholder{
-	color: #000;
+	color: white;
 }
 .search-form-container :-ms-input-placeholder{
-	color: #666;
+	color: white;
 }
 .search-form-container :focus:-ms-input-placeholder{
-	color: #000;
+	color: white;
 }
 
 #signup-lightbox button, 
@@ -3764,4 +3812,28 @@ only screen and (				min-resolution: 2dppx) {
 	.signup-2-1{
 		background-image: url(../images/restaurant/generic/signup-1@2x.jpg);
 	}
+}
+
+#contactButton:hover {
+	background-color: black;
+}
+
+#pic:hover {
+
+	box-shadow: 0px 0px 10px #4666FF,
+								0px 0px 20px #4666FF,
+								0px 0px 30px #4666FF,
+								0px 0px 40px #4666FF,
+								0px 0px 50px #4666FF,
+								0px 0px 60px #4666FF,
+								0px 0px 70px #4666FF;
+
+}
+
+#content-slider {
+	background-image: url("../RainWaterIrrigation.jpg")
+}
+
+#weirdTopThing {
+	background-image: url("../RainWaterIrrigation.jpg")
 }
